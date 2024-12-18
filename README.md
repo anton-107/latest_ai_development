@@ -2,7 +2,26 @@
 
 Welcome to the LatestAiDevelopment Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
 
+## Docker commands
+1. Build an image:
+
+```bash
+docker build -t learn-crewai02 .
+```
+
+2. Run a container:
+```bash
+docker run --name crew02  -it learn-crewai02
+```
+
+3. Copy output:
+```bash
+docker cp crew02:/app/output ./output
+```
+
 ## Installation
+
+SKIP this - all you need is docker commands above (given that you have docker installed)
 
 Ensure you have Python >=3.10 <=3.13 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
 

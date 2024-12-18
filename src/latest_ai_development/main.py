@@ -16,7 +16,7 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'AI LLMs'
+        'topic': 'Software agencies'
     }
     LatestAiDevelopment().crew().kickoff(inputs=inputs)
 
@@ -26,7 +26,7 @@ def train():
     Train the crew for a given number of iterations.
     """
     inputs = {
-        "topic": "AI LLMs"
+        "topic": "Software agencies"
     }
     try:
         LatestAiDevelopment().crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs)
